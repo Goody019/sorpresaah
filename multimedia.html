@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Un especial</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      background-color: #d980b6;
+      background-image: linear-gradient(to bottom right, #d980b6, #7e57c2);
+    }
+    .carousel-wrapper {
+      width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+    }
+    .carousel {
+      width: 100%;
+    }
+    .carousel img {
+      width: 100%;
+      height: auto;
+    }
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      font-size: 0;
+      line-height: 0;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      color: #000;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+    }
+    .slick-prev:hover,
+    .slick-next:hover {
+      opacity: 1;
+    }
+    .slick-prev {
+      left: 10px;
+      background-image: url('previous-icon.png');
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: center;
+    }
+    .slick-next {
+      right: 10px;
+      background-image: url('next-icon.png');
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: center;
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .slick-dots li {
+      margin: 0 5px;
+    }
+    .slick-dots li button {
+      font-size: 0;
+      line-height: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #ccc;
+      border: none;
+      cursor: pointer;
+    }
+    .slick-dots li.slick-active button {
+      background-color: #000;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: calc(100vh - 50px); /* Se resta el tamaño del menú si lo hay */
+        padding-top: 190px; /* Se ajusta el espacio del menú */
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1>.....</h1>
+
+  <div class="container">
+  <div id="menu" styles="display: none;">
+    <h2>Selecciona por orden el menu</h2>
+    <ul>
+      <li><a href="parte.html">Texto</a></li>
+      <li><a href="multimedia.html">Multimedia</a></li>
+      <li><a href="climax.html">Climax</a></li>
+    </ul>
+  </div>
+
+  <div class="carousel-wrapper">
+    <div class="carousel">
+
+    <img src="img/img1.jpg" alt="Imagen 1" ><br><br>
+    <img src="img/img3.jpg" alt="Imagen 2" ><br><br>
+    <img src="img/img4.jpg" alt="Imagen 3" ><br><br>
+    <img src="img/img6.jpg" alt="Imagen 4" ><br><br>
+    <img src="img/img7.jpg" alt="Imagen 5" ><br><br>
+    <img src="img/img8.jpg" alt="Imagen 6" ><br><br>
+    <img src="img/img9.jpg" alt="Imagen 7" ><br><br>
+    <img src="img/img17.jpg" alt="Imagen 8" ><br><br>
+    
+   
+
+    <!-- <img src="img/img1.jpg" alt="Imagen 1" ><br><br>
+    <img src="img/img3.jpg" alt="Imagen 2" ><br><br>
+    <img src="img/img4.jpg" alt="Imagen 3" ><br><br>
+    <img src="img/img6.jpg" alt="Imagen 4" ><br><br>
+    <img src="img/img7.jpg" alt="Imagen 5" ><br><br>
+    <img src="img/img8.jpg" alt="Imagen 6" ><br><br>
+    <img src="img/img9.jpg" alt="Imagen 7" ><br><br>
+    <img src="img/img2.jpg" alt="Imagen 8" ><br><br>
+    <img src="img/img5.jpg" alt="Imagen 9" ><br><br>
+    <img src="img/img10.jpg" alt="Imagen 10" ><br><br>
+    <img src="img/img11.jpg" alt="Imagen 12" ><br><br>
+    <img src="img/img12.jpg" alt="Imagen 13" ><br><br>
+    <img src="img/img13.jpg" alt="Imagen 14" ><br><br>
+    <img src="img/img14.jpg" alt="Imagen 15" ><br><br>
+    <img src="img/img15.jpg" alt="Imagen 16" ><br><br>
+    <img src="img/img16.jpg" alt="Imagen 17" ><br><br>
+    <img src="img/img17.jpg" alt="Imagen 18" ><br><br>
+    <img src="img/img19.jpg" alt="Imagen 19" ><br><br>
+    <img src="img/img20.jpg" alt="Imagen 20" ><br><br>
+    <img src="img/img18.jpg" alt="Imagen 11" ><br><br>
+   -->
+
+   </div>
+  </div>
+
+
+  <!--carousel 2-->
+  <div class="carousel-wrapper">
+    <div class="carousel">
+
+    <img src="img/img2.jpg" alt="Imagen 9" ><br><br>
+    <img src="img/img5.jpg" alt="Imagen 10" ><br><br>
+    <img src="img/img10.jpg" alt="Imagen 11" ><br><br>
+    <img src="img/img11.jpg" alt="Imagen 12" ><br><br>
+    <img src="img/img12.jpg" alt="Imagen 13" ><br><br>
+    <img src="img/img13.jpg" alt="Imagen 14" ><br><br>
+    <img src="img/img14.jpg" alt="Imagen 15" ><br><br>
+    <img src="img/img15.jpg" alt="Imagen 16" ><br><br>
+
+   </div>
+  </div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>'
+      });
+    });
+  </script>
+
+
+
+  <script src="script.js"></script>
+  <script >
+    // Obtener el elemento del menú
+var menu = document.getElementById("menu");
+
+// Obtener la posición actual de desplazamiento
+var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+// Verificar el desplazamiento al hacer scroll
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  
+  if (currentScrollPos > scrollPos) {
+    // Scrolling hacia abajo, ocultar el menú
+    menu.classList.add("hidden");
+  } else {
+    // Scrolling hacia arriba, mostrar el menú
+    menu.classList.remove("hidden");
+  }
+  
+  // Actualizar la posición de desplazamiento
+  scrollPos = currentScrollPos;
+};
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Un especial</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+  <style>
+    body {
+      background-color: #d980b6;
+      background-image: linear-gradient(to bottom right, #d980b6, #7e57c2);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: calc(100vh - 50px); /* Se resta el tamaño del menú si lo hay */
+        padding-top: 200px; /* Se ajusta el espacio del menú */
+    }
+
+    .text {
+        font-size: 25px;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .image-frame {
+        border: 5px solid black;
+        padding: 40px;
+        margin-bottom: 30px;
+    }
+</style>
+
+</head>
+<body>
+  <h1>..</h1>
+
+  <div id="menu" styles="display: none;">
+    <h2>Selecciona por orden el menu</h2>
+    <ul>
+      <li><a href="parte.html">Texto</a></li>
+      <li><a href="multimedia.html">Multimedia</a></li>
+      <li><a href="climax.html">Climax</a></li>
+    </ul>
+  </div>
+
+  <div class="container" styles="display: none;">
+  
+      <div class="image-frame">
+        <img src="img/img12.jpg" alt="Imagen" width="100%" height="100%"><br><br>
+      </div>
+
+      <div class="text">
+
+    <h3 >Felicidades</h3>
+    <p>El dias de hoy es un dia especial por el simple motivo de que estas cumpliendo años</p>    
+    <p>Mejor amiga enserio feliz cumpleaños ya es una años menos de vida y un años mas de experiencias vividas experiencias al borde de la muerte otras totalmente absurdas pero eh un años de experiencias mas no le viene mal a nadie.</p>
+    <p>En serio estoy muy contento por este dia que es tu cumpleaños y bueno te queria agradecer por siempre estar hay para mi en todos esos temas tan locos enserio te aprecio bastante mil gracias siempre por estar apoyandome, aconsejandome con cositas enserio se que aburro con el mismo tema aveces pero graciaspor estar hay siempre sin importar el tema</p>
+    <p>Mn tu lo sabes te aprecio mucho que siempre recibiras el mejor consejo de mi parte mediante cualquier tema y bueno tu cuentas conmigo ante cualquier tema, favor, ayuda siempre cuentas conmigo y lo sabes te quiero mn</p>
+    <p>Enserio feliz dia.</p>
+
+    
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script >
+    // Obtener el elemento del menú
+var menu = document.getElementById("menu");
+
+// Obtener la posición actual de desplazamiento
+var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+// Verificar el desplazamiento al hacer scroll
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  
+  if (currentScrollPos > scrollPos) {
+    // Scrolling hacia abajo, ocultar el menú
+    menu.classList.add("hidden");
+  } else {
+    // Scrolling hacia arriba, mostrar el menú
+    menu.classList.remove("hidden");
+  }
+  
+  // Actualizar la posición de desplazamiento
+  scrollPos = currentScrollPos;
+};
+  </script>
+</body>
+</html>

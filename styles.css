@@ -1,0 +1,108 @@
+/* Estilos para el login */
+#login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #00b8a9, #4d39ce); /*estilo de la mezcla de la franja azul*/
+}
+
+#login-form {
+  border: 2px solid #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #333;
+}
+
+#login-form label {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"],
+#login-form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#login-form input[type="submit"] {
+  background-color: #00b8a9;
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+
+/* Estilos para el menú */
+#menu {
+  background-color: #00b8a9;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: top 0.3s; /* Añade una transición suave a la propiedad top */
+  z-index: 999; /* Asegura que el menú esté por encima del contenido */
+}
+
+#menu.hidden {
+  top: -60px; /* Esconde el menú moviéndolo fuera de la pantalla */
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+#menu ul li a:hover {
+  background-color: #4d39ce;
+}
+
+/* Estilos para el contenido */
+#contenido {
+  padding-top: 60px; /* Ajusta el espacio superior para evitar que el contenido se solape con el menú */
+}
+
+/* Estilos para hacer la página responsive */
+@media (max-width: 768px) {
+  #menu {
+    padding: 10px;
+  }
+
+  #menu ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #menu ul li {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
